@@ -1,0 +1,21 @@
+<!-- app.component.html -->
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-top">
+      <h2>Dashboard</h2>
+      <nav>
+        <a routerLink="/profile" routerLinkActive="active">Profile</a>
+        <a routerLink="/users" routerLinkActive="active">Users</a>
+        <a routerLink="/products" routerLinkActive="active">Products</a>
+      </nav>
+    </div>
+
+    <div class="sidebar-bottom">
+      <button class="logout-btn" (click)="logout()">Logout</button>
+    </div>
+  </div>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

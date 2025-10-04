@@ -1,0 +1,9 @@
+<div *ngIf="loading" class="loading">Loading profile...</div>
+
+<div *ngIf="!loading && user" class="profile-card">
+  <h2>Welcome, {{ user.firstName }} {{ user.lastName }}</h2>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <button (click)="logout()" class="logout-btn">Logout</button>
+</div>
+
+

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #123456;
+  --color-secondary: #abcdef;
+  --color-bg: #f5f5f5;
+  --color-text: #333333;
+  --radius-base: 8px;
+  --spacing-unit: 16px;
+  /* etc */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Your Figma Font', sans-serif;
+margin: 0;
+padding: 0;
+}

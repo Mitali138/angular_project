@@ -12,7 +12,7 @@ export class LoginComponent {
   errorMsg = '';
 
   loginForm = this.fb.group({
-    username: ['emilys', Validators.required], // prefilled per assignment if you want
+    username: ['emilys', Validators.required], 
     password: ['emilyspass', Validators.required]
   });
 
@@ -21,7 +21,7 @@ export class LoginComponent {
  onSubmit() {
   if (this.loginForm.invalid) return;
 
-  const credentials = this.loginForm.getRawValue(); // { username: string | null, password: string | null }
+  const credentials = this.loginForm.getRawValue(); 
 
   if (credentials.username && credentials.password) {
     this.auth.login({

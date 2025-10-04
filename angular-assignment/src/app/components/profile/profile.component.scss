@@ -1,12 +1,11 @@
-/* Profile card styles */
 .profile-card {
-  background: #f0f8ff; /* White card */
+  background: #f0f8ff; 
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   max-width: 80em;
   height: 10em;
-  margin: 30px auto; /* Center horizontally */
+  margin: 30px auto; 
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -36,7 +35,6 @@
   background: #f29f1c;
 }
 
-/* Loading text */
 .loading {
   text-align: center;
   margin: 50px auto;

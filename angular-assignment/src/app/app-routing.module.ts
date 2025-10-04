@@ -7,20 +7,12 @@ import { ProductsComponent } from './components/products/products.component';
 import { AuthGuard } from './guards/auth.guard';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
-// const routes: Routes = [
-//   { path: 'login', component: LoginComponent },
-//   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
-//   { path: 'users', component: UsersComponent, canActivate: [AuthGuard] },
-//   { path: 'products', component: ProductsComponent, canActivate: [AuthGuard] },
-//   { path: '', redirectTo: 'login', pathMatch: 'full' },
-//   { path: '**', redirectTo: 'login' }
-// ];
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
     path: '',
-    component: NavbarComponent,   // <-- wrapper with sidenav
+    component: NavbarComponent,   
     canActivate: [AuthGuard],
     children: [
       { path: 'profile', component: ProfileComponent },
